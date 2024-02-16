@@ -1,7 +1,7 @@
 body, html {
     margin: 0;
     padding: 0;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Roboto Mono', monospace;
 }
 
 .sidebar {
@@ -10,8 +10,8 @@ body, html {
     left: 0;
     width: 450px;
     height: 100%;
-    background-color: #30475e; /* Dark Blueish Gray */
-    color: #f2a365; /* Soft Orange */
+    background-color: #2C3333; /* Dark Blueish Gray */
+    color: #E7F6F2; /* Soft Orange */
     padding: 20px;
     box-sizing: border-box;
     display: flex;
@@ -46,7 +46,7 @@ body, html {
     margin-left: 450px;
     overflow-y: auto;
     min-height: 150vh;
-    background-color: #f0f0f0;
+    background-color: #c0d9da;
 }
 
 section {
@@ -62,7 +62,7 @@ section {
 }
 
 .nav-item.active {
-    color: #f05454; /* Redish */
+    color: #f1d381; /* Redish */
 }
 
 .social-links {
@@ -78,7 +78,7 @@ section {
 }
 
 .social-link:hover {
-    color: #f05454; /* Change color on hover */
+    color: #f1d381; /* Change color on hover */
 }
 
 .icon {
@@ -103,14 +103,14 @@ section {
     font-size: 1.1em; /* Slightly larger font size for readability */
     line-height: 1.6; /* Increased line height for better readability */
     margin-bottom: 40px; /* Space between paragraphs */
-    color: #865555; /* Darker text color for contrast */
+    color: #000000; /* Darker text color for contrast */
     text-align: justify; /* Justify text for a clean look */
 }
 
 /* First paragraph specific style for an introductory statement */
 #about p:first-of-type {
     font-weight: bold; /* Make the first paragraph bold */
-    color: #5f1f1f; /* Even darker color for emphasis */
+    color: #000000; /* Even darker color for emphasis */
     font-size: 1.2em; /* Slightly larger font size */
     text-align: left; /* Aligning the first paragraph to the left */
 }
@@ -128,7 +128,7 @@ section {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     margin: 20px auto; /* Centering the section with some margin */
     max-width: 80%; /* Limiting the width for better line lengths */
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto Mono', monospace;
     
 }
 
@@ -148,7 +148,7 @@ section {
 
 #publications li .conference {
     display: inline-block;; /* Block level element */
-    color: #414ce4; /* Dark grey color */
+    color: #52734D; /* Dark grey color */
     border-radius: 5px;
     font-weight: bold;
     margin: 5px 0;
@@ -164,7 +164,7 @@ section {
     font-weight: bold; /* Italicize the title */
 }
 #publications li .authors {
-    color: #8806ac; /* Dark grey color */
+    color: #000000; /* Dark grey color */
 }
 
 #teaching {
@@ -192,6 +192,7 @@ section {
     font-style: italic; /* Italicize the title */
     font-weight: bold;
     font-size: 1.1em;
+    color: #4a90e2;
 }
 
 #awards {
@@ -214,6 +215,7 @@ section {
     font-style: italic; /* Italicize the title */
     font-weight: bold;
     font-size: 1.1em;
+    color: #4a90e2;
 }
 
 #awards li  {
@@ -242,6 +244,7 @@ section {
     font-style: italic; /* Italicize the title */
     font-weight: bold;
     font-size: 1.1em;
+    color: #4a90e2;
 }
 
 #news li  {
@@ -255,7 +258,7 @@ section {
     color: #333; 
     text-transform: uppercase; 
     letter-spacing: 2px; /* Spacing out letters for a sophisticated touch */
-    border-bottom: 4px solid #3399B2; 
+    border-bottom: 4px solid #52734D; 
     display: inline-block; /* Allows the border-bottom to fit the content width */
     padding-bottom: 5px; /* Space between text and border */
     margin-bottom: 20px; /* Space between the heading and the content below */
@@ -269,7 +272,7 @@ section {
     left: 0;
     width: 75px; /* Fixed width for a small decorative underline */
     height: 4px; /* Thickness of the decorative line */
-    background-color: #FFD700; /* A contrasting color for the decorative element */
+    background-color: #52734D; /* A contrasting color for the decorative element */
     border-radius: 1px; /* Slight rounding of the corners */
 }
 
@@ -285,19 +288,136 @@ section {
     width: 200px; 
     height: 200px; 
     border-radius: 50%; 
-    border: 3px solid #f2a365; 
+    border: 3px solid #c6b353; 
     object-fit: cover; /
 }
 
+/* Responsive adjustments */
+@media (max-width: 990px) {
+    #about p {
+        font-size: 1em; /* Slightly smaller font size for very small screens */
+        padding: 0px; /* Reduce padding */
+        margin-bottom: 10px; /* Reduce space between paragraphs */
+        text-align: left; /* Align text to the left instead of justifying */
+    }
+}
+
+@media (max-width: 870px) {
+    #about p {
+        font-size: 0.8em; /* Slightly smaller font size for very small screens */
+        padding: 0px; /* Reduce padding */
+        margin-bottom: 10px; /* Reduce space between paragraphs */
+        text-align: left; /* Align text to the left instead of justifying */
+    }
+}
+@media (max-width: 800px) {
+    #about p {
+        font-size: 0.7em; /* Slightly smaller font size for very small screens */
+        padding: 0px; /* Reduce padding */
+        margin-bottom: 10px; /* Reduce space between paragraphs */
+        text-align: left; /* Align text to the left instead of justifying */
+    }
+}
 
 /* Responsive design for the sidebar */
 @media (max-width: 768px) {
     .sidebar {
-        width: 100%;
-        height: auto;
-        position: relative;
+        width: 100%; /* Sidebar takes full width */
+        position: relative; /* Position relative to the layout flow */
+        padding-bottom: 20px; /* Add some space for the collapsed nav */
     }
+
     .main-content {
         margin-left: 0;
+        overflow-y: auto;
+        min-height: auto; /* Let the content define the height */
+        background-color: #f0f0f0;
+        padding: 10px; /* Add some padding for readability */
+    }
+
+    .content-section {
+        min-height: auto; /* Allow sections to grow as tall as the content requires */
+        padding: 20px; /* Adjust padding for mobile */
+        height: auto; /* Important: override any fixed height */
+    }
+
+    /* Adjustments for nav items to make them more touch-friendly */
+    .nav-item {
+        padding: 15px; /* Larger touch targets for navigation items */
+    }
+
+    /* Stack profile picture and text in the sidebar */
+    .text-container,
+    .profile-picture-container {
+        flex-direction: column; /* Stack children vertically */
+        align-items: center; /* Center align the stacked items */
+        padding: 0px;
+    }
+
+    /* Responsive image styling to prevent overflow */
+    .profile-picture {
+        width: 120px; /* Adjust image size for mobile */
+        height: 120px; /* Adjust image size for mobile */
+        margin: 0 auto 20px; /* Center image and add margin below */
+    }
+    
+    /* Ensure h1 text fits on smaller screens */
+    .text-container h1 {
+        font-size: 1.8em; /* Smaller font size for mobile */
+        word-break: break-word; /* Prevents text from overflowing its container */
+    }
+
+    /* Adjust h2 size for smaller screens */
+    .text-container h2 {
+        font-size: 1.2em;
+    }
+    #about p {
+        padding: 0px;
+        font-size: 0.7em; /* Slightly larger font size for readability */
+        line-height: 1.6; /* Increased line height for better readability */
+        margin-bottom: 0px; /* Space between paragraphs */
+        color: #395B64; /* Darker text color for contrast */
+        text-align: justify; /* Justify text for a clean look */
     }
 }
+
+@media (max-width: 633px) {
+    .main-content {
+        padding: 10px; /* Ensure padding doesn't cause overflow */
+    }
+
+    .content-section {
+        /* Ensure any fixed widths are overridden */
+        width: auto; /* Or width: 100%; */
+        max-width: 100%; /* Make sure content doesn't exceed the viewport width */
+        box-sizing: border-box; /* Include padding and border in the element's total width */
+    }
+
+    /* Other elements within .main-content */
+    .some-inner-element {
+        width: 100%; /* Example of making an inner element flexible */
+        /* Other responsive adjustments as needed */
+    }
+
+    /* Adjust image sizes or other content as needed */
+    img {
+        max-width: 100%; /* Make images responsive */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    /* Additional adjustments for text size, etc. */
+    h1, h2, p {
+        /* Adjust font sizes for smaller screens if necessary */
+        font-size: smaller; /* Or specific size in em, rem, or px */
+    }
+    #about p {
+        padding: 0px;
+        font-size: 0.7em; /* Slightly larger font size for readability */
+        line-height: 1.6; /* Increased line height for better readability */
+        margin-bottom: 0px; /* Space between paragraphs */
+        color: #395B64; /* Darker text color for contrast */
+        text-align: justify; /* Justify text for a clean look */
+    }
+
+}
+
