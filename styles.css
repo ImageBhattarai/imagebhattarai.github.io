@@ -4,6 +4,11 @@ body, html {
     font-family: 'Roboto Mono', monospace;
 }
 
+nav ul {
+    list-style: none; /* Remove default list bullets */
+
+}
+
 .sidebar {
     position: fixed;
     top: 0;
@@ -405,9 +410,7 @@ section {
         height: auto; /* Maintain aspect ratio */
     }
 
-    /* Additional adjustments for text size, etc. */
     h1, h2, p {
-        /* Adjust font sizes for smaller screens if necessary */
         font-size: smaller; /* Or specific size in em, rem, or px */
     }
     #about p {
