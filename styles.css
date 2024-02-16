@@ -1,0 +1,303 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 450px;
+    height: 100%;
+    background-color: #30475e; /* Dark Blueish Gray */
+    color: #f2a365; /* Soft Orange */
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh; /* Full height */
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Aligns text to the left */
+    max-width: 100%;
+}
+
+.text-container h1 {
+    font-size: 2.5em; 
+    margin-bottom: 0.5em; 
+}
+
+.text-container h2 {
+    font-size: 1.5em; 
+    margin-bottom: 0.25em; 
+}
+
+.text-container p {
+    font-size: 1em; 
+    margin-bottom: 1em; 
+}
+
+.main-content {
+    margin-left: 450px;
+    overflow-y: auto;
+    min-height: 150vh;
+    background-color: #f0f0f0;
+}
+
+section {
+    padding: 20px;
+    height: 100vh;
+    border-bottom: 1px solid #ccc; 
+}
+
+.nav-item {
+    color: #ececec; /* Light Gray */
+    padding: 10px;
+    cursor: pointer;
+}
+
+.nav-item.active {
+    color: #f05454; /* Redish */
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+}
+
+.social-link {
+    color: #ececec;
+    text-decoration: none;
+    font-size: 24px; 
+    margin: 0 10px; /* Spacing between icons */
+}
+
+.social-link:hover {
+    color: #f05454; /* Change color on hover */
+}
+
+.icon {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+
+/* Style for the About section */
+#about {
+    background-color: #f7f7f7; /* Light background color for the section */
+    padding: 40px; /* Ample padding for readability */
+    border-radius: 8px; /* Rounded corners for a modern look */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin: 20px auto; /* Centering the section with some margin */
+    max-width: 80%; /* Limiting the width for better line lengths */
+}
+
+/* Style for paragraphs within the About section */
+#about p {
+    padding: 10px;
+    font-size: 1.1em; /* Slightly larger font size for readability */
+    line-height: 1.6; /* Increased line height for better readability */
+    margin-bottom: 40px; /* Space between paragraphs */
+    color: #865555; /* Darker text color for contrast */
+    text-align: justify; /* Justify text for a clean look */
+}
+
+/* First paragraph specific style for an introductory statement */
+#about p:first-of-type {
+    font-weight: bold; /* Make the first paragraph bold */
+    color: #5f1f1f; /* Even darker color for emphasis */
+    font-size: 1.2em; /* Slightly larger font size */
+    text-align: left; /* Aligning the first paragraph to the left */
+}
+
+/* Last paragraph specific style for a concluding statement */
+#about p:last-of-type {
+    font-style: italic; /* Italicize the last paragraph */
+    text-align: center; 
+}
+
+#publications {
+    background-color: #f7f7f7; /* Light background color for the section */
+    padding: 40px; /* Ample padding for readability */
+    border-radius: 8px; /* Rounded corners for a modern look */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin: 20px auto; /* Centering the section with some margin */
+    max-width: 80%; /* Limiting the width for better line lengths */
+    font-family: Arial, sans-serif;
+    
+}
+
+/* Style for the list of publications */
+#publications ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0;
+    margin: 0;
+    font-size: 1.2em;
+}
+
+#publications li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd; /* A line between entries */
+    margin-bottom: 10px;
+}
+
+#publications li .conference {
+    display: inline-block;; /* Block level element */
+    color: #414ce4; /* Dark grey color */
+    border-radius: 5px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+#publications li .paper-title {
+    text-decoration: none; /* No underline */
+    font-style: italic; /* Italicize the title */
+}
+
+#publications li .me {
+    text-decoration: none; /* No underline */
+    font-weight: bold; /* Italicize the title */
+}
+#publications li .authors {
+    color: #8806ac; /* Dark grey color */
+}
+
+#teaching {
+    background-color: #f7f7f7; /* Light background color for the section */
+    padding: 40px; /* Ample padding for readability */
+    border-radius: 8px; /* Rounded corners for a modern look */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin: 20px auto; /* Centering the section with some margin */
+    max-width: 80%; /* Limiting the width for better line lengths */
+}
+
+#teaching ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0;
+    margin: 0;
+}
+#teaching li  {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd; /* A line between entries */
+    margin-bottom: 10px;
+}
+
+#teaching li .course-title {
+    text-decoration: none; /* No underline */
+    font-style: italic; /* Italicize the title */
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+#awards {
+    background-color: #f7f7f7; /* Light background color for the section */
+    padding: 40px; /* Ample padding for readability */
+    border-radius: 8px; /* Rounded corners for a modern look */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin: 20px auto; /* Centering the section with some margin */
+    max-width: 80%; /* Limiting the width for better line lengths */
+}
+
+#awards ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0;
+    margin: 0;
+}
+
+#awards li .awards-title {
+    text-decoration: none; /* No underline */
+    font-style: italic; /* Italicize the title */
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+#awards li  {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd; /* A line between entries */
+    margin-bottom: 10px;
+}
+
+#news {
+    background-color: #f7f7f7; /* Light background color for the section */
+    padding: 40px; /* Ample padding for readability */
+    border-radius: 8px; /* Rounded corners for a modern look */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin: 20px auto; /* Centering the section with some margin */
+    max-width: 80%; /* Limiting the width for better line lengths */
+}
+
+#news ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0;
+    margin: 0;
+}
+
+#news li .news-title {
+    text-decoration: none; /* No underline */
+    font-style: italic; /* Italicize the title */
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+#news li  {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd; /* A line between entries */
+    margin-bottom: 10px;
+}
+
+.content-section h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    color: #333; 
+    text-transform: uppercase; 
+    letter-spacing: 2px; /* Spacing out letters for a sophisticated touch */
+    border-bottom: 4px solid #3399B2; 
+    display: inline-block; /* Allows the border-bottom to fit the content width */
+    padding-bottom: 5px; /* Space between text and border */
+    margin-bottom: 20px; /* Space between the heading and the content below */
+    position: relative; 
+}
+
+.content-section h2::after {
+    content: '';
+    position: absolute;
+    bottom: -4px; /* Positioning just below the bottom border */
+    left: 0;
+    width: 75px; /* Fixed width for a small decorative underline */
+    height: 4px; /* Thickness of the decorative line */
+    background-color: #FFD700; /* A contrasting color for the decorative element */
+    border-radius: 1px; /* Slight rounding of the corners */
+}
+
+
+.profile-picture-container {
+    display: flex;
+    justify-content: center; /* Center the image in the container */
+    padding-left: 70px;
+
+}
+
+.profile-picture {
+    width: 200px; 
+    height: 200px; 
+    border-radius: 50%; 
+    border: 3px solid #f2a365; 
+    object-fit: cover; /
+}
+
+
+/* Responsive design for the sidebar */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .main-content {
+        margin-left: 0;
+    }
+}
