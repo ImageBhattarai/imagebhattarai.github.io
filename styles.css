@@ -134,6 +134,7 @@ section {
     margin: 20px auto; /* Centering the section with some margin */
     max-width: 80%; /* Limiting the width for better line lengths */
     font-family: 'Roboto Mono', monospace;
+    font-size: 0.85em;
     
 }
 
@@ -295,6 +296,10 @@ section {
     border-radius: 50%; 
     border: 3px solid #c6b353; 
     object-fit: cover; /
+}
+
+.impact {
+    font-weight: bolder;
 }
 
 /* Responsive adjustments */
