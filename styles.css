@@ -290,12 +290,25 @@ section {
 
 }
 
-.profile-picture {
+/* .profile-picture {
     width: 200px; 
     height: 200px; 
     border-radius: 50%; 
     border: 3px solid #c6b353; 
     object-fit: cover; /
+} */
+
+.profile-picture {
+    width: 200px; 
+    height: 200px; 
+    border-radius: 50%; 
+    border: 3px solid #c6b353; 
+    object-fit: cover;
+    transition: transform 0.3s ease; /* Optional smooth transition */
+}
+
+.profile-picture:hover {
+    transform: scale(1.2); /* Adjust the scale value as desired */
 }
 
 .impact {
