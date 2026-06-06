@@ -173,6 +173,35 @@ section {
     color: #000000; /* Dark grey color */
 }
 
+#projects {
+    background-color: #f7f7f7;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 80%;
+}
+
+#projects ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#projects li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+#projects li .project-title {
+    text-decoration: none;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #4a90e2;
+}
+
 #teaching {
     background-color: #f7f7f7; /* Light background color for the section */
     padding: 40px; /* Ample padding for readability */
