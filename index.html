@@ -18,7 +18,7 @@
                 <div class="profile-picture-container">
                     <img src="image_50753025.JPG" alt="Image" class="profile-picture">
                 </div>
-                <h2>PhD Student</h2>
+                <h2>PhD Candidate</h2>
                 <p>Currently studying at Oklahoma State University</p>
             </div>
             <nav>
@@ -26,6 +26,7 @@
                     <li class="nav-item active" data-target="about">ABOUT</li>
                     <li class="nav-item" data-target="publications">PUBLICATIONS</li>
                     <li class="nav-item" data-target="awards">AWARDS</li>
+                    <li class="nav-item" data-target="projects">PROJECTS</li>
                     <li class="nav-item" data-target="teaching">TEACHING</li>
                     <li class="nav-item" data-target="news">NEWS</li>
                 </ul>
@@ -46,7 +47,7 @@
     </div>
     <div class="main-content">
         <section id="about" class="content-section">
-            <p>Hello! I'm <strong>Image</strong>, a Computer Science Ph.D. student with a passion for building secure, intelligent, and scalable systems. My work sits at the intersection of <strong>cybersecurity, machine learning, privacy-preserving systems, and distributed computing</strong>, where I focus on solving real-world challenges in IoT, drone networks, and intelligent systems.</p>
+            <p>Hello! I'm <strong>Image</strong>, a Computer Science Ph.D. candidate with a passion for building secure, intelligent, and scalable systems. My work sits at the intersection of <strong>cybersecurity, machine learning, privacy-preserving systems, and distributed computing</strong>, where I focus on solving real-world challenges in IoT, drone networks, and intelligent systems.</p>
             <p>Through graduate research and hands-on implementation, I have developed expertise in building secure and intelligent systems, working on projects involving <strong>machine learning, reinforcement learning, federated learning, cybersecurity, and full-stack development</strong>. My work focuses on designing practical, privacy-preserving solutions for distributed environments such as IoT and drone networks.</p>
             <p>I enjoy turning complex ideas into practical solutions and continuously exploring new technologies to solve meaningful problems. This portfolio highlights my projects, research, and technical experiences. Feel free to explore my work, and don’t hesitate to reach out if you'd like to collaborate or connect.</p>
         </section>
@@ -104,57 +105,95 @@
         </section>
         <section id="projects" class="content-section">
             <h2>Projects</h2>
-            <ul>
+
+            <ul class="projects-list">
+
                 <li>
-                    <span class="project-title">SPARDA – Secure Data Aggregation for IoT Networks</span>
-                    <p>
-                        Designed and implemented a secure IoT data aggregation protocol using homomorphic encryption,
-                        physical unclonable functions (PUFs), and trapdoor functions to defend against malicious gateway attacks.
-                    </p>
+                    <span class="project-title">SPARDA – Secure Data Aggregation for IoT Networks | Python, Raspberry Pi</span>
+                    <ul class="project-details">
+                        <li>Designed and implemented a secure data aggregation protocol for RPL-based IoT networks.</li>
+                        <li>Used homomorphic encryption, PUFs, and trapdoor functions to defend against malicious gateway attacks.</li>
+                        <li>Implemented and benchmarked the system in Python on Raspberry Pi 4.</li>
+                    </ul>
                 </li>
 
                 <li>
-                    <span class="project-title">Deep Reinforcement Learning-Based Scheduling for Internet of Drones</span>
-                    <p>
-                        Built a Python and SUMO simulation environment to optimize drone data download scheduling using
-                        deep reinforcement learning and QoS-aware parameters.
-                    </p>
+                    <span class="project-title">DrDre – Deep Reinforcement Learning-Based Scheduling for Internet of Drones | Python, Deep Learning</span>
+                    <ul class="project-details">
+                        <li>Developed a deep reinforcement learning scheduling system for drone data download requests.</li>
+                        <li>Built a Python and SUMO simulation environment to model drone-ground station interactions.</li>
+                        <li>Used Deep Q-Learning with request deadline, urgency, data size, priority, and popularity.</li>
+                        <li>Improved request satisfaction and latency compared to baseline scheduling approaches.</li>
+                    </ul>
                 </li>
 
                 <li>
-                    <span class="project-title">Privacy-Preserving Federated Learning for Drone Authentication</span>
-                    <p>
-                        Developed a federated learning-based drone authentication system using deep neural networks and
-                        radio-frequency signal features for decentralized model training.
-                    </p>
+                    <span class="project-title">FLASH – Privacy-Preserving Federated Learning for Drone Authentication | MATLAB, Federated Learning</span>
+                    <ul class="project-details">
+                        <li>Built a federated learning-based drone authentication system using RF signal features.</li>
+                        <li>Implemented a MATLAB-based deep neural network pipeline using CFO and I-Q imbalance features.</li>
+                        <li>Protected local model updates using homomorphic encryption before global aggregation.</li>
+                        <li>Benchmarked the framework against baseline authentication schemes.</li>
+                    </ul>
                 </li>
+
+                                <li>
+                    <span class="project-title">liteA4 – Application-Aware Authentication for Internet of Drones | Python, Cryptography</span>
+                    <ul class="project-details">
+                        <li>Designed a lightweight and anonymous authentication and key agreement protocol for Internet of Drones systems.</li>
+                        <li>Established separate session keys for different data types to reduce sensitive data leakage risk.</li>
+                        <li>Used hash functions, XOR operations, and PUFs to reduce computation, communication, storage, and energy overhead.</li>
+                        <li>Verified protocol security using AVISPA and evaluated performance against benchmark schemes.</li>
+                    </ul>
+                </li>
+
+                <li>
+                    <span class="project-title">liteAGAP – Lightweight Aggregate Authentication for Internet of Drones | Python, Aggregation</span>
+                    <ul class="project-details">
+                        <li>Developed an aggregate authentication protocol to secure communication between a ground station and a group of drones.</li>
+                        <li>Used PUFs and bilinear pairing to support secure and efficient group authentication.</li>
+                        <li>Implemented and evaluated the protocol against benchmark schemes for communication overhead, runtime, memory usage, and energy consumption.</li>
+                        <li>Received the IEEE CCNC 2024 Best Paper Award for this work.</li>
+                    </ul>
+                </li>
+
+                <li>
+                    <span class="project-title">polyBlock – Cross-Domain Authentication for IoD Networks | Java, Blockchain</span>
+                    <ul class="project-details">
+                        <li>Designed a cross-domain authentication protocol for drones communicating with ground stations across different physical domains.</li>
+                        <li>Integrated Chebyshev polynomial-based authentication with private blockchain storage for drone cryptographic information.</li>
+                        <li>Used changing pseudonyms to improve drone anonymity and reduce tracking risk.</li>
+                        <li>Verified security with AVISPA and evaluated execution time and communication overhead.</li>
+                    </ul>
+                </li>
+
             </ul>
         </section>
         <section id="teaching" class="content-section">
             <h2>Teaching</h2>
-            <p>I was a teaching assitant for the courses below:</p>
+            <p>I served as a Graduate Teaching Assistant for the following courses:</p>
+
             <ul>
                 <li>
-                    <span class="course-title">Data Structures and Algorithm</span>
-                    <p>One of the fundamental courses of computer science that includes concepts such as arrays, linked list, trees, graphs, etc.</p>
-                </li>
-          
-                <li>
-                    <span class="course-title">Organization of Programming Languages</span>
-                    <p>Exploring the landscape of language paradigm and their underlying principles</p>
+                    <span class="course-title">Data Structures and Algorithms</span>
+                    <p>Assisted students with core computer science concepts, including arrays, linked lists, trees, graphs, sorting, and algorithmic problem-solving.</p>
                 </li>
 
                 <li>
-                    <span class="course-title">Intro to Java</span>
-                    <p>The fundamental course for JAVA programming, starting from basic syntax to advanced topics such as Object Oriented Programming.</p>
+                    <span class="course-title">Organization of Programming Languages</span>
+                    <p>Supported coursework on programming language paradigms, syntax, semantics, control structures, and foundational language design principles.</p>
+                </li>
+
+                <li>
+                    <span class="course-title">Introduction to Java</span>
+                    <p>Helped students build a foundation in Java programming, covering syntax, object-oriented programming, debugging, and basic software development practices.</p>
                 </li>
 
                 <li>
                     <span class="course-title">Introduction to Computer Security</span>
-                    <p>The foundational course covering a broad spectrum of topics such as cryptography, network security, security threats, etc.</p>
+                    <p>Supported coursework covering cryptography, network security, authentication, access control, vulnerabilities, and common security threats.</p>
                 </li>
             </ul>
-
         </section>
         <section id="news" class="content-section">
             <h2>Latest News</h2>

@@ -56,8 +56,9 @@ nav ul {
 
 section {
     padding: 20px;
-    height: 100vh;
-    border-bottom: 1px solid #ccc; 
+    min-height: 100vh;
+    height: auto;
+    border-bottom: 1px solid #ccc;
 }
 
 .nav-item {
@@ -180,26 +181,41 @@ section {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin: 20px auto;
     max-width: 80%;
+    height: auto;
+    min-height: 100vh;
 }
 
-#projects ul {
+.projects-list {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-#projects li {
-    padding: 10px 0;
+.projects-list > li {
+    padding: 18px 0;
     border-bottom: 1px solid #ddd;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
-#projects li .project-title {
-    text-decoration: none;
+.project-title {
     font-style: italic;
     font-weight: bold;
     font-size: 1.1em;
     color: #4a90e2;
+}
+
+.project-details {
+    list-style-type: disc;
+    padding-left: 25px;
+    margin-top: 10px;
+}
+
+.project-details li {
+    border-bottom: none;
+    margin-bottom: 8px;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
 }
 
 #teaching {
